@@ -67,17 +67,60 @@ ul {
     color: black;
 }
 
-/* H1 Setting */
-h1 {
-    font-size: 6em;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: 'verdana';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+
+
+/* Contant down(descendre le contenu en bas de page) */
+
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+
+body{
+
+font-family: 'Kufam', cursive;
+background-color: #f1f1f1;
+
+}
+
+header {
+text-align: center;
+background-color: #333;
+color: #FFD700 ;
+padding: 50px;
+font-size: 80px;
+
+
+}
+
+header h2 {
+
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+
+
+}
+
+header p {
+
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+a {
+
+    color: #f1f1f1;
+}
+
+main {
+
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+
 }
 
 <link rel="stylesheet"
