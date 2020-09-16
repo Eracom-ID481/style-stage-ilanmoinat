@@ -58,6 +58,7 @@ select {
 }
 
 /* Fin du CSS Reset */
+
 /* Etoile */
 .link-github svg {
     width: 75px;
@@ -82,6 +83,10 @@ body{
 
 font-family: 'Kufam', cursive;
 background-color: #f1f1f1;
+ position: relative;
+padding-bottom: 58px
+min-height: 100vh;
+
 
 }
 
@@ -106,7 +111,7 @@ header h2 {
 
 header p {
 
-    font-size: 20px;
+    font-size: 15px;
     color: #f1f1f1;
 }
 
@@ -120,10 +125,39 @@ main {
     width: 90vw;
     margin: 0 auto;
     padding: 30px 20px;
+    /*min-height: calc(100vh - 211px - 58px);*/
+
+}
+article {
+
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 
 }
 
-<link rel="stylesheet"
-href="https://fonts.googleapis.com/css?family=Roboto"
-href="https://fonts.googleapis.com/css?family=pacifico"
-/><link href="style.css"rel="stylesheet"/>
+article:last-child {
+    margin-bottom: 0;
+
+}
+
+article h3 {
+    margin:  10px 0 25px 0;
+}
+article p{
+    margin-top: 16px;
+    line-height: 24px;
+}
+footer{
+
+text-align: center;
+background-color: #333;
+color: #fff;
+padding:20px;
+bottom: 0;
+width: : 100%;
+
+/*z-index: 1; /*
+
+}
