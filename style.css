@@ -31,6 +31,8 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
+
+
 }
 
 /* Make images easier to work with */
@@ -61,7 +63,8 @@ select {
 
 /* Etoile */
 .link-github svg {
-    width: 75px;
+    width: 35px;
+    color:#2196f3;
 }
 
 ul {
@@ -81,7 +84,7 @@ box-sizing: border-box;
 
 body{
 
-font-family: 'Kufam', cursive;
+font-family: 'consolas', cursive;
 background-color: #f1f1f1;
  position: relative;
 padding-bottom: 58px
@@ -115,10 +118,41 @@ header p {
     color: #f1f1f1;
 }
 
+/* Neon boton */
+
 a {
 
     color: #f1f1f1;
 }
+
+.link-github {
+
+    font-family: 'consolas';
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color:#2196f3;
+    text-transform:  uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0,2s;
+    color:#255784;
+
+}
+
+
+a:hover {
+    color:#255784;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3 ;
+    transition-delay: 0,5s ;
+
+
+}
+
+
 
 main {
 
