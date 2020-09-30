@@ -31,6 +31,7 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
+    background-color: black;
 
 
 }
@@ -64,7 +65,7 @@ select {
 /* Etoile */
 .link-github svg {
     width: 35px;
-    color:#2196f3;
+    color:blue;
 }
 
 ul {
@@ -125,6 +126,75 @@ a {
     color: #f1f1f1;
 }
 
+header{
+
+
+background-color: black;
+
+animation: animate 2s linear  infinite;
+}
+
+h1:before{
+ content:'';
+ position: absolute;
+ top: 0;
+ left:0;
+ witdh:100%;
+ height: 100%;
+ background: #00adff;
+ z-index: 1;
+ mix-blend-mode: color;
+ animation: animate 1s linear infinite;
+}
+
+
+
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-shadow:
+    filter: blur(1px);
+}
+
+
+
+h1 span
+{
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+ @keyframes animate
+{
+    0%,100%
+    {
+        color: red;
+        filter: blur(2px);
+        text-shadow: 0 0 10x #00b3ff,
+                    0 0 20x #00b3ff,
+                    0 0 40x #00b3ff,
+                    0 0 80x #00b3ff,
+                    0 0 120x #00b3ff,
+                    0 0 200x #00b3ff,
+                    0 0 300x #00b3ff,
+                    0 0 400x #00b3ff;
+
+    }
+    5%,95%
+    {
+        color: black;
+        filter: blur(0px);
+        text-shadow: none;
+
+
+    }
+
+}
+
 .link-github {
 
     font-family: 'consolas';
@@ -153,7 +223,6 @@ a:hover {
 }
 
 
-
 main {
 
     width: 90vw;
@@ -162,6 +231,14 @@ main {
     /*min-height: calc(100vh - 211px - 58px);*/
 
 }
+
+main:focus {
+    outline: none;
+
+}
+
+
+
 article {
 
     background-color: #fff;
@@ -175,6 +252,8 @@ article:last-child {
     margin-bottom: 0;
 
 }
+
+
 
 article h3 {
     margin:  10px 0 25px 0;
@@ -191,6 +270,8 @@ color: #fff;
 padding:20px;
 bottom: 0;
 width: : 100%;
+
+
 
 /*z-index: 1; /*
 
